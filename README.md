@@ -4,4 +4,4 @@
 - Animations and art
 - Mobile friendly
 - Graphs made with SVG
-- Data sourced from Joseph Poore and Thomas Nemecek work [Science article](https://science.sciencemag.org/content/360/6392/987)
+- Data sourced from Joseph Poore and Thomas Nemecek's work ([found here](https://science.sciencemag.org/content/360/6392/987))
