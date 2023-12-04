@@ -1,0 +1,80 @@
+.pointer {
+    width: 50px; /* Total width of the arrow */
+    height: 20px; /* Total height of the arrow */
+    position: relative;
+}
+
+/* Right Arrow (>) */
+.pointer.right::before,
+.pointer.right::after {
+    content: '';
+    position: absolute;
+    width: 26px; /* Half the width of the arrow */
+    height: 10px; /* Half the height of the arrow */
+    background-color: #000; /* Arrow color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.pointer.right::before {
+    transform: skewY(-45deg);
+}
+
+.pointer.right::after {
+    right: 0;
+    transform: skewY(45deg);
+}
+
+/* Left Arrow (<) */
+.pointer.left::before,
+.pointer.left::after {
+    content: '';
+    position: absolute;
+    width: 26px; /* Half the width of the arrow */
+    height: 10px; /* Half the height of the arrow */
+    background-color: #000; /* Arrow color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.pointer.left::before {
+    transform: skewY(-45deg);
+}
+
+.pointer.left::after {
+    right: 0;
+    transform: skewY(45deg);
+}
+
+
+/* Left Arrow (<) */
+.pointer.left {
+    left: -75%;
+    top: -50%;
+    transform: translate(10%, 50%);
+    rotate: -90deg;
+}
+
+/* Right Arrow (>) */
+.pointer.right {
+    left: 100%;
+    top: -50%;
+    transform: translate(-50%, -50%);
+    rotate: 90deg;
+}
+
+.pointer.right:hover {
+    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.pointer.left:hover {
+    cursor: pointer;
+    transform: translate(10%, 50%) scale(1.1);
+}
+
+@media only screen and (min-width: 601px) {
+    .pointer.left {
+        left: -40%;
+    }
+    .pointer.right {
+        left: 100%;
+    }
+}
